@@ -1,6 +1,7 @@
 version: '3'
 services:
   goapp:
+    restart: always
     build:
       context: walletcore
     volumes:
@@ -12,8 +13,10 @@ services:
       - mysql
 
   balanceapp:
+    restart: always
     build:
       context: balance-ms
+    command: /bin/sh -c "npm install && npm run dev"
     volumes:
       - ./balance-ms:/srv/app
     ports:
@@ -27,15 +30,17 @@ services:
     container_name: digital-wallet-db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: 'wallet'
+      MYSQL_USER: 'userroot'
+      MYSQL_PASSWORD: 'root'
+      MYSQL_ROOT_PASSWORD: 'root'
     ports:
       - 3306:3306
     volumes:
-      - .docker/dbdata:/var/lib/mysql
       - .docker/mysql:/docker-entrypoint-initdb.d
 
   zookeeper:
+    restart: always
     image: "confluentinc/cp-zookeeper:6.1.0"
     container_name: zookeeper
     ports:
@@ -46,6 +51,7 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
 
   kafka:
+    restart: always
     image: "confluentinc/cp-enterprise-kafka:6.1.0"
     container_name: kafka
     depends_on:
@@ -86,6 +92,7 @@ services:
       "
 
   control-center:
+    restart: always
     image: confluentinc/cp-enterprise-control-center:7.3.0
     hostname: control-center
     container_name: control-center

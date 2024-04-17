@@ -12,8 +12,6 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o build/main ./cmd/walletcore/main.go
-
 EXPOSE 8080
 
-CMD ["./build/main"]
+CMD ["go", "run", "./cmd/walletcore/main.go"]

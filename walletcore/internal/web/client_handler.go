@@ -3,6 +3,7 @@ package web
 import (
 	"encoding/json"
 	"net/http"
+	"fmt"
 
 	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/usecase/create_client"
 )
@@ -26,6 +27,7 @@ func (h *WebClientHandler) CreateClient(w http.ResponseWriter, r *http.Request) 
 	}
 	output, err := h.CreateClientUseCase.Execute(dto)
 	if err != nil {
+		fmt.Println("Error when create client", err)
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
