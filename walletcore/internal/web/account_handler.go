@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/lassulfi/fc-ms-wallet/internal/usecase/create_account"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/usecase/create_account"
 )
 
 type WebAccountHandler struct {

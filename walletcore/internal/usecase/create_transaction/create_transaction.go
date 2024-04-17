@@ -3,10 +3,10 @@ package create_transaction
 import (
 	"context"
 
-	"github.com/lassulfi/fc-ms-wallet/internal/entity"
-	"github.com/lassulfi/fc-ms-wallet/internal/gateway"
-	"github.com/lassulfi/fc-ms-wallet/pkg/events"
-	"github.com/lassulfi/fc-ms-wallet/pkg/uow"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/entity"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/gateway"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/pkg/events"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/pkg/uow"
 )
 
 type CreateTransactionInputDTO struct {

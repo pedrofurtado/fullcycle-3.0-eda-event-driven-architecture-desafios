@@ -1,4 +1,4 @@
-module github.com/lassulfi/fc-ms-wallet
+module github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios
 
 go 1.15
 

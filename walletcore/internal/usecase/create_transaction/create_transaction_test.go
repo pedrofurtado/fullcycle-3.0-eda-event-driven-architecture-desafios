@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/lassulfi/fc-ms-wallet/internal/entity"
-	"github.com/lassulfi/fc-ms-wallet/internal/event"
-	"github.com/lassulfi/fc-ms-wallet/internal/usecase/mocks"
-	"github.com/lassulfi/fc-ms-wallet/pkg/events"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/entity"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/event"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/usecase/mocks"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/pkg/events"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

@@ -3,8 +3,8 @@ package create_account
 import (
 	"testing"
 
-	"github.com/lassulfi/fc-ms-wallet/internal/entity"
-	"github.com/lassulfi/fc-ms-wallet/internal/usecase/mocks"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/entity"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/usecase/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

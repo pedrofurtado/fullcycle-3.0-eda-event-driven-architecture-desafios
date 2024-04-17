@@ -7,17 +7,17 @@ import (
 
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/lassulfi/fc-ms-wallet/internal/database"
-	"github.com/lassulfi/fc-ms-wallet/internal/event"
-	"github.com/lassulfi/fc-ms-wallet/internal/event/handler"
-	"github.com/lassulfi/fc-ms-wallet/internal/usecase/create_account"
-	"github.com/lassulfi/fc-ms-wallet/internal/usecase/create_client"
-	"github.com/lassulfi/fc-ms-wallet/internal/usecase/create_transaction"
-	"github.com/lassulfi/fc-ms-wallet/internal/web"
-	"github.com/lassulfi/fc-ms-wallet/internal/web/webserver"
-	"github.com/lassulfi/fc-ms-wallet/pkg/events"
-	"github.com/lassulfi/fc-ms-wallet/pkg/kafka"
-	"github.com/lassulfi/fc-ms-wallet/pkg/uow"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/database"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/event"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/event/handler"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/usecase/create_account"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/usecase/create_client"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/usecase/create_transaction"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/web"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/internal/web/webserver"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/pkg/events"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/pkg/kafka"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/pkg/uow"
 )
 
 func main() {

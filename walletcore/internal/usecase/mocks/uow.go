@@ -3,7 +3,7 @@ package mocks
 import (
 	"context"
 
-	"github.com/lassulfi/fc-ms-wallet/pkg/uow"
+	"github.com/pedrofurtado/fullcycle-3.0-eda-event-driven-architecture-desafios/pkg/uow"
 	"github.com/stretchr/testify/mock"
 )
 
